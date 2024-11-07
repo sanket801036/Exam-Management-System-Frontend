@@ -1,0 +1,105 @@
+/* Main container */
+.result-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+/* Form styling */
+.subject-form {
+    margin-bottom: 20px;
+}
+
+.subject-label {
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.subject-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.show-records-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-records-btn:hover {
+    background-color: #4682b4;
+}
+
+/* Table styling */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.result-table th, .result-table td {
+    padding: 15px;
+    border: 1px solid #444;
+}
+
+.result-table th {
+    background-color: #333;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.result-table td {
+    text-align: center;
+}
+
+/* Pagination button styling */
+.pagination-container {
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    color: #fff;
+    font-size: 1.5em;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .result-container {
+        width: 95%;
+    }
+
+    .result-table {
+        font-size: 0.9em;
+    }
+
+    .pagination-btn {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,29 @@
+<div class="result-container">
+    <form class="subject-form">
+        <label for="subject" class="subject-label">Enter Subject:</label>
+        <input name="subject" [(ngModel)]="subject" class="subject-input">
+        <button (click)="showRecords()" class="show-records-btn">Show Records</button>
+    </form>
+
+    <br><br><br>
+
+    <table class="result-table">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+        <tr *ngFor="let result of results">
+            <td>{{result.username}}</td>
+            <td>{{result.subject}}</td>
+            <td>{{result.score}}</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Pagination buttons -->
+    <div class="pagination-container">
+        <input type="button" *ngFor="let pageno of pages" [value]="pageno" (click)="getResults2(pageno)" class="pagination-btn">
+    </div>
+</div>

@@ -1,0 +1,82 @@
+/* Main container styling */
+div {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Black background */
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+    color: #ffffff; /* White text color */
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2); /* Soft shadow for container */
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+    background-color: #222222; /* Darker background for input fields */
+    color: #ffffff; /* White text for inputs */
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none;
+}
+
+/* Button styling */
+input[type="button"] {
+    background-color: #4CAF50; /* Green background for buttons */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.3);
+}
+
+input[type="button"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Styling for the message */
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #f39c12; /* Orange message color */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    div {
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 95%;
+    }
+
+    input[type="button"] {
+        width: 95%;
+        font-size: 1em;
+    }
+}
+h2 {
+    color: #34C759;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36 px;
+  }

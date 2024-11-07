@@ -1,0 +1,22 @@
+<div class="score-container">
+    <span class="score-message">Score is {{score}}</span>
+
+    <table class="results-table">
+        <thead>
+            <tr>
+                <th>Q.No</th>
+                <th>Question</th>
+                <th>Submitted Answer</th>
+                <th>Correct Answer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let answer of allAnswers" [ngClass]="{'correct': compare(answer.submittedAnswer, answer.correctAnswer), 'incorrect': !compare(answer.submittedAnswer, answer.correctAnswer)}">
+                <td>{{answer.qno}}</td>
+                <td>{{answer.qtext}}</td>
+                <td>{{answer.submittedAnswer}}</td>
+                <td>{{answer.correctAnswer}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
